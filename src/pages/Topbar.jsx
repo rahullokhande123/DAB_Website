@@ -27,9 +27,6 @@ const Topbar=()=>{
          setmydata(res.data)
     })
   }
-  
-
-  
   const ans=mydata.map((key)=>{
     return(
       <>

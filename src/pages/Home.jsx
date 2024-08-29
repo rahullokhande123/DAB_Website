@@ -62,7 +62,7 @@ const Home=()=>{
     <>
 {/* ================================ Hero Section ============================= */}
 
-<h1 style={{marginTop:"10px",marginLeft:"650px"}}>Specialist Doctors</h1>
+<h1 style={{marginTop:"10px",marginLeft:"40%"}}>Specialist Doctors</h1>
 
 <Container style={{marginTop:"50px",display:"flex",marginLeft:"200px"}}>
 

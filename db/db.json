@@ -70,6 +70,24 @@
       "contact": "12365478958",
       "adhar": "52589547896",
       "doctor": "Dr. Varsha Gupta"
+    },
+    {
+      "id": "d134",
+      "name": "Syam",
+      "city": "Bhopal",
+      "age": "15",
+      "contact": "96856974258",
+      "adhar": "988465426888",
+      "doctor": "Dr. Ritu Baghel"
+    },
+    {
+      "id": "f95e",
+      "name": "hjdkjhd",
+      "city": "yjjyg",
+      "age": "56",
+      "contact": "5454",
+      "adhar": "988465426888",
+      "doctor": "Dr. Gourav Patel"
     }
   ],
   "Doctors": [

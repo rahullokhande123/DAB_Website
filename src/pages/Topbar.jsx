@@ -18,29 +18,7 @@ import Table from 'react-bootstrap/Table';
 const Topbar=()=>{
 
   const [Doc,setDoc]=useState("");
-  const [mydata,setmydata]=useState([])
   const navigate=useNavigate();
-
-  const handlesearch=()=>{
-    let api=`http://localhost:3000/Patients/?doctor=${Doc}`
-    axios.get(api).then((res)=>{
-         setmydata(res.data)
-    })
-  }
-  const ans=mydata.map((key)=>{
-    return(
-      <>
-          <tr>
-            <td>{key.name}</td>
-            <td>{key.city}</td>
-            <td>{key.age}</td>
-            <td>{key.adhar}</td>
-            <td>{key.contact}</td>
-            <td>{key.doctor}</td>
-          </tr>
-      </>
-    )
-  })
 
   return(
     <>
@@ -83,35 +61,7 @@ const Topbar=()=>{
               value={Doc} onChange={(e)=>{setDoc(e.target.value)}}
               
             />
-            <Button variant="outline-success" onClick={handlesearch} >Search</Button>
-  {/* ================================================================= */}
-        {/* <div>
-          {ans}
-        </div> */}
-        {/* <section style={{display:"block"}}>
-        <div style={{display:"block"}}>
-
-             <b style={{marginLeft:"500px",fontSize:"20px"}}>Search</b>
-             <input style={{marginLeft:"10px",marginTop:"3%",width:"300px"}} type="text" value={Doc} onChange={(e)=>{setDoc(e.target.value)}} />
-             <button onClick={handlesearch} style={{marginLeft:"10px",borderRadius:"10px",backgroundColor:"gray",color:"white",marginBottom:"20px"}}>Search</button>
-        </div> 
-        <div style={{marginLeft:"350px",width:"50%"}}> 
-        <Table striped bordered hover >
-
-           <tr>
-              <th>Patients Name</th>
-              <th>City</th>
-              <th>Age</th>
-              <th>Aadhar No.</th>
-              <th>Doctor</th>
-          </tr>
-    
-         <tbody>
-             {ans}
-         </tbody>
-           </Table>
-         </div>
-        </section> */}
+            <Button variant="outline-success" onClick={()=>{navigate("/search")}}  >Search</Button>
 
           </Form>
         </Navbar.Collapse>
